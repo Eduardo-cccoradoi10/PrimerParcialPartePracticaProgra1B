@@ -132,18 +132,4 @@ public static int leerEntero() {
 }
 
 
-public static double leerDouble() {
-    Scanner sc = new Scanner(System.in);
-
-    while (true) {
-        try {
-            System.out.print("Ingrese un numero decimal: ");
-            double numero = sc.nextDouble();
-            return numero; // si llega aquí, el número es válido
-        } catch (Exception e) {
-            System.out.println("Error: debe ingresar un numero decimal valido.");
-            sc.nextLine(); // limpia el buffer para evitar bucles infinitos
-        }
-    }
-}
 }
